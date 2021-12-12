@@ -1,0 +1,165 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    margin: 0;
+}
+
+header#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: #ddd;
+}
+
+img#header-img {
+    width: 5rem;
+}
+
+nav#nav-bar>ul {
+    display: flex;
+    list-style: none;
+}
+
+a.nav-link {
+    margin: 0 5rem;
+    text-decoration: none;
+    color: #df5555;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+form#form {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+legend.form-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+input#submit {
+    display: block;
+    margin: 16px auto;
+    cursor: pointer;
+    border: 1px solid #f1c40f;
+    font-weight: bold;
+    font-size: 18px;
+    background: #f1c40f;
+    padding: 5px 20px;
+}
+
+input#submit:hover {
+    transition: background-color 0.4s ease-in-out;
+    background-color: #f15e0f;
+}
+
+input#email {
+    width: 20%;
+    padding: 6px;
+    font-size: 15px;
+}
+
+section#features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+section#features>div {
+    width: 50%;
+}
+
+div#howItWorks {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+iframe#video {
+    height: 285px;
+    width: 500px;
+    max-width: 100%;
+}
+
+section#pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+section#pricing>div {
+    border: 1px solid;
+    text-align: center;
+    width: 25%;
+    margin: 0 16px;
+    min-height: 315px;
+}
+
+.title h4 {
+    margin: 0;
+    padding: 12px;
+}
+
+.title {
+    font-size: 20px;
+    background: #ddd;
+}
+
+.select {
+    margin-top: 35px;
+}
+
+.select a {
+    text-decoration: none;
+    border: 1px solid #f1c40f;
+    background: #f1c40f;
+    color: #000;
+    padding: 10px;
+}
+
+.select a:hover {
+    transition: background-color 0.4s ease-in-out;
+    background-color: #f15e0f;
+}
+
+@media (max-width: 740px) {
+    header#header {
+        justify-content: space-around;
+    }
+    nav#nav-bar>ul {
+        display: block;
+    }
+    section#features {
+        margin: 5rem 12px;
+    }
+    section#features>div {
+        width: 100%;
+    }
+    a.nav-link {
+        margin: 0;
+    }
+    section#pricing {
+        display: block;
+    }
+    section#pricing>div {
+        width: 90%;
+        margin: 12px auto;
+    }
+    iframe#video {
+        width: 90%;
+        height: 188px;
+    }
+    input#email {
+        width: 60%;
+    }
+}

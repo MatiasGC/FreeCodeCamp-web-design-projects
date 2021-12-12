@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: floralwhite;
+}
+
+h1#title,
+#description {
+    text-align: center;
+}
+
+form#survey-form {
+    width: 50%;
+    margin: auto;
+    background: #f5d2a6;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+input,
+select#dropdown {
+    display: block;
+    margin: auto;
+    width: 60%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+.form-group {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    width: 60%;
+    text-align: start;
+}
+
+.form-group>p {
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form-group.radio label input,
+.form-group.checkbox label input {
+    width: 10%;
+    display: inline-block;
+}
+
+.form-group.radio label,
+.form-group.checkbox label {
+    margin-bottom: 16px;
+}
+
+textarea {
+    resize: none;
+    width: 60%;
+}
+
+button[type="submit"] {
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    border: 2px solid black;
+    width: 60%;
+}
+
+button[type="submit"]:hover {
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+
+@media (max-width: 740px) {
+    form#survey-form {
+        width: 90%;
+    }
+    input,
+    select#dropdown {
+        width: 100%;
+    }
+    label,
+    .form-group>p,
+    textarea {
+        width: 100%;
+    }
+}
